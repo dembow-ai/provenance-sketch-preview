@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ProvenanceRegistry — Sketch Preview</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+         background: #fafaf8; color: #1a1a1a; padding: 48px 24px; }
+  .wrap { max-width: 860px; margin: 0 auto; }
+  h1 { font-size: 28px; letter-spacing: -0.02em; margin-bottom: 6px; }
+  .sub { color: #666; font-size: 14px; margin-bottom: 32px; line-height: 1.5; }
+  .flow { background: #fff; border: 1px solid #e5e5e2; border-radius: 12px;
+          padding: 20px 22px; margin-bottom: 24px; }
+  .flow h2 { font-size: 14px; text-transform: uppercase; letter-spacing: 0.08em;
+             color: #888; margin-bottom: 12px; }
+  .flow a { display: inline-block; margin: 4px 8px 4px 0; padding: 8px 14px;
+            background: #111; color: #fff; text-decoration: none; border-radius: 6px;
+            font-size: 14px; }
+  .flow a:hover { background: #333; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 12px; }
+  .card { background: #fff; border: 1px solid #e5e5e2; border-radius: 10px; padding: 16px;
+          text-decoration: none; color: inherit; display: block; }
+  .card:hover { border-color: #bbb; box-shadow: 0 2px 8px rgba(0,0,0,0.06); }
+  .card .num { font-size: 11px; color: #999; text-transform: uppercase; letter-spacing: 0.06em; }
+  .card .name { font-weight: 600; font-size: 15px; margin-top: 4px; }
+  .card .desc { font-size: 13px; color: #666; margin-top: 4px; line-height: 1.4; }
+  .note { margin-top: 32px; font-size: 12px; color: #999; line-height: 1.6; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>ProvenanceRegistry — UI previews</h1>
+  <p class="sub">10 sketch variants for the artist verification &amp; registration flow.
+  Static HTML mockups — demo data, not a live signup.</p>
+
+  <div class="flow">
+    <h2>Start here — the full journey</h2>
+    <a href="sketches/010-unified-flow/index.html">010 · Register → Certificate → Inspect</a>
+  </div>
+
+  <h2 style="font-size:14px;text-transform:uppercase;letter-spacing:0.08em;color:#888;margin-bottom:12px;">All variants</h2>
+  <div class="grid">
+    <a class="card" href="sketches/001-editorial-certificate/index.html">
+      <div class="num">001</div><div class="name">Editorial certificate</div>
+      <div class="desc">Serif notarized document, minimal</div></a>
+    <a class="card" href="sketches/002-utilitarian-dense/index.html">
+      <div class="num">002</div><div class="name">Utilitarian dense</div>
+      <div class="desc">3-pane dark console</div></a>
+    <a class="card" href="sketches/003-split-pane-live/index.html">
+      <div class="num">003</div><div class="name">Split-pane live</div>
+      <div class="desc">Claim left, verification right</div></a>
+    <a class="card" href="sketches/004-minimal-expandable/index.html">
+      <div class="num">004</div><div class="name">Minimal expandable</div>
+      <div class="desc">Details-per-row evidence</div></a>
+    <a class="card" href="sketches/005-minimal-modal/index.html">
+      <div class="num">005</div><div class="name">Minimal + modal</div>
+      <div class="desc">4-tab raw JSON modal</div></a>
+    <a class="card" href="sketches/006-minimal-multiview/index.html">
+      <div class="num">006</div><div class="name">Minimal multiview</div>
+      <div class="desc">4-tab contract action switcher</div></a>
+    <a class="card" href="sketches/007-flow-auth-to-minimal/index.html">
+      <div class="num">007</div><div class="name">Auth → minimal</div>
+      <div class="desc">Split-pane collapses to certificate</div></a>
+    <a class="card" href="sketches/008-flow-minimal-to-dense/index.html">
+      <div class="num">008</div><div class="name">Minimal → dense</div>
+      <div class="desc">Certificate expands inline / modal</div></a>
+    <a class="card" href="sketches/009-flow-paired-cards/index.html">
+      <div class="num">009</div><div class="name">Paired cards</div>
+      <div class="desc">Form + certificate side-by-side</div></a>
+  </div>
+
+  <p class="note">Data shown is mockup-only. Real registration requires the GenLayer contract
+  deployed to testnet with API keys set via <code>set_api_keys</code>.</p>
+</div>
+</body>
+</html>
